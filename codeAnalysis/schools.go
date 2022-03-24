@@ -1,21 +1,21 @@
 package codeAnalysis
 
 type Institute struct {
-	code schoolCode
+	code SchoolCode
 	name string
 }
 
 type School struct {
-	referenceInstitute schoolCode
-	code               schoolCode
+	referenceInstitute SchoolCode
+	code               SchoolCode
 	classification     Classification
 	name               string
-	emailAddress       emailAddress
-	pecAddress         emailAddress
+	emailAddress       EmailAddress
+	pecAddress         EmailAddress
 	location           Location
 }
 
-type schoolCode string
+type SchoolCode string
 type Classification struct {
 	order string
 	grade int

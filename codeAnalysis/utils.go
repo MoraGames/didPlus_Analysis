@@ -1,6 +1,6 @@
 package codeAnalysis
 
-type emailAddress string
+type EmailAddress string
 
 type Location struct {
 	region           string
@@ -10,3 +10,7 @@ type Location struct {
 	postcode         string
 	address          string
 }
+
+type Date string
+
+type Year string
