@@ -2,8 +2,9 @@ package codeAnalysis
 
 import (
 	"crypto/rand"
-	"golang.org/x/crypto/argon2"
 	"log"
+
+	"golang.org/x/crypto/argon2"
 )
 
 type Password struct {
@@ -11,7 +12,7 @@ type Password struct {
 	hash []byte
 }
 
-func NewPassword (password []byte)(Password){
+func NewPassword(password []byte) Password {
 	//Generate the salt
 	salt := make([]byte, 16)
 	if _, err := rand.Read(salt); err != nil {

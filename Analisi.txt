@@ -1,0 +1,43 @@
+-- Macro Functions --
+
+AppealsRegister
+Grades
+ReportCards
+BehavioralNotes
+Timetable
+Activity ->
+NoticeBoard ->
+
+-> Google Calendar
+ |- NoticeBoard::Events
+ |- Activity::Homeworks
+ |- Activity::Lessons
+ |- Activity::Tests
+
+-- Databases and Tables --
+
+[Users]
+ |- Students
+ |- Teachers
+ |- ATAStaffs
+ |- SistemAdministrator
+
+[Structures]
+ |- Insitute
+ |- School
+ |
+ |- Register
+ |- Votes
+ |- Subject
+ |- Homeworks
+
+-- DB Logic Model --
+
+##
+Teaching (Teacher, Subject)
+Votes (Teacher, Subject, Student)
+Register ()
+
+##
+Stato dello studente (Presente, Assente, EntrataInRitardo, UscitaInAnticipo, FuoriClasse)
+Voti dello studente ()
